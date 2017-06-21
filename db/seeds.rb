@@ -25,4 +25,5 @@ puts "10 blog posts created"
           thumb_image: "http://via.placeholder.com/350x200",
           )
   end
+  
   puts "9 portfolio items created"
