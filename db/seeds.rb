@@ -1,4 +1,5 @@
 10.times do |blog|
+<<<<<<< HEAD
 Blog.create!(
     title: "My Blog Post #{blog}",
     body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
@@ -9,11 +10,18 @@ Blog.create!(
     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate 
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 )
+=======
+  Blog.create!(
+      title: "My Blog Post #{blog}",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      )
+>>>>>>> portfolio-feature
 end
 
 puts "10 blog posts created"
 
 5.times do |skill|
+<<<<<<< HEAD
   Skill.create!(
     title: "Rails #{skill}",
     percent_utilized: 15
@@ -33,3 +41,24 @@ puts "5 skills created"
 end
 
 puts "9 portfolio items created"
+=======
+    Skill.create!(
+      title: "Rails #{skill}",
+      percent_uilized: 15
+      )
+  end
+  
+  puts "5 skills created"
+  
+  9.times do |portfolio_item|
+      Portfolio.create!(
+          title: "Portfolio title: #{portfolio_item}",
+          subtitle: "My great service",
+          body: "Lorem ipsum dolor sit amet..",
+          main_image: "http://via.placeholder.com/600x400",
+          thumb_image: "http://via.placeholder.com/350x200",
+          )
+  end
+  
+  puts "9 portfolio items created"
+>>>>>>> portfolio-feature
