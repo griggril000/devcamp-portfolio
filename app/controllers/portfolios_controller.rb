@@ -1,10 +1,10 @@
 class PortfoliosController < ApplicationController
-<<<<<<< HEAD
   def index
     @portfolio_items = Portfolio.all
-=======
-    def index
-        @portfolio_items = Portfolio.all
+  end
+    
+    def angular
+      @angular_portfolio_items = Portfolio.angular
     end
     
     def new
@@ -53,6 +53,8 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
->>>>>>> portfolio-feature
+  end
+  def index
+    @portfolio_items = Portfolio.all
   end
 end
