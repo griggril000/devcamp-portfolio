@@ -74,5 +74,5 @@ def alerts
 end
 
 def alert_generator msg
-  js add_gritter(msg, title: "Riley Grigg Portfolio", sticky: false, time: 2500)
+  js add_gritter(msg, title: "Riley Grigg's Portfolio", sticky: false, time: 2500)
 end
