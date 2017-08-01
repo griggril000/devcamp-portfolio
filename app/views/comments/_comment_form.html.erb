@@ -1,7 +1,7 @@
 <% unless current_user.is_a? GuestUser %>
   <%= form_for @comment, url: '#' do |f| %>
     <div class="form-group">
-      <%= f.label :content %>
+      <%= f.label "Comments must be no less than 2 characters and no more than 1000 characters." %>
       <%= f.text_area :content, class: 'form-control' %>
     </div>
 
