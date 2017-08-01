@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   def create
+    byebug
     @comment = current_user.comments.build(comment_params)
   end
   
