@@ -2,6 +2,12 @@
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
     <p>Hi. I'm Riley.</p>
+    <% if logged_in?(:site_admin) %>
+      <p><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown Guide for Posts</a></p>
+    <% end %>
+    <% unless current_user.is_a? GuestUser %>
+      <p><a href="http://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Emoji List</a></p>
+    <% end %>
   </div>
   
   <div class="sidebar-module">
