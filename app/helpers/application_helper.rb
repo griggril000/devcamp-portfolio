@@ -48,7 +48,7 @@ module ApplicationHelper
       },
     ]
   end
-
+  
   def nav_helper style, tag_type
     nav_links = ''
 
