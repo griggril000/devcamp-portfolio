@@ -49,8 +49,13 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6,
-.gritter-title {
+.gritter-title,
+.form-control {
 font-family: 'Satisfy', cursive;
+}
+
+.btn.btn-primary {
+  font-family: 'Satisfy', cursive;
 }
 
 p {
