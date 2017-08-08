@@ -2,17 +2,32 @@
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
     <p>Hi. I'm Riley.</p>
+    <% if logged_in?(:site_admin) %>
+      <p><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown Guide for Posts</a></p>
+    <% end %>
+    <% unless current_user.is_a? GuestUser %>
+      <p><a href="http://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Emoji List</a></p>
+    <% end %>
+  </div>
+  
+    <%= source_helper("alert alert-info blog-sidebar-source") %>
+  
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
   </div>
 
   <div class="sidebar-module">
-    <h4><%= "Elsewhere" if logged_in?(:site_admin, :family, :friends) %></h4>
+    <h4><%= "Elsewhere" %></h4>
     <ol class="list-unstyled social-links">
-      <li><a href="https://github.com/griggril000"><%= fa_icon "github" if logged_in?(:site_admin, :family, :friends) %></a></li>
-      <li><a href="https://facebook.com/riley.grigg.1"><%= fa_icon "facebook" if logged_in?(:site_admin, :family, :friends) %></a></li>
-      <li><a href="https://instagram.com/griggril000"><%= fa_icon "instagram" if logged_in?(:site_admin, :friends) %></a></li>
-      <li><a href="https://snapchat.com/add/griggril000"><%= fa_icon "snapchat" if logged_in?(:site_admin, :friends) %></a></li>
-      <li><a href="https://pinterest.com/griggril000"><%= fa_icon "pinterest" if logged_in?(:site_admin, :friends) %></a></li>
-      <li><a href="https://plus.google.com/u/0/+RileyGrigg"><%= fa_icon "google-plus" if logged_in?(:site_admin, :family, :friends) %></a></li>
+      <li><a href="https://github.com/griggril000" target="_blank"><%= fa_icon "github" %></a></li>
+      <li><a href="https://facebook.com/riley.grigg.1" target="_blank"><%= fa_icon "facebook" if logged_in?(:site_admin, :family, :friends) %></a></li>
+      <li><a href="https://instagram.com/griggril000" target="_blank"><%= fa_icon "instagram" if logged_in?(:site_admin, :friends) %></a></li>
+      <li><a href="https://snapchat.com/add/griggril000" target="_blank"><%= fa_icon "snapchat" if logged_in?(:site_admin, :friends) %></a></li>
+      <li><a href="https://pinterest.com/griggril000" target="_blank"><%= fa_icon "pinterest" if logged_in?(:site_admin, :friends) %></a></li>
+      <li><a href="https://plus.google.com/u/0/+RileyGrigg" target="_blank"><%= fa_icon "google-plus" if logged_in?(:site_admin, :family, :friends) %></a></li>
     </ol>
   </div>
 </div>

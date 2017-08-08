@@ -6,7 +6,12 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+    <link href="http://riley-student-workspace-griggril000.c9users.io/assets/application.scss" rel="stylesheet">
+    
     <meta name="keywords" content="<%= @seo_keywords %>" />
+    
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -18,20 +23,16 @@
 
     <%= yield %>
     
-    <!-- start of footer -->
     <%= render 'shared/portfolio_footer' %>
-    <!-- end of footer -->
     
     <%= alerts %>
-    
-    <%= source_helper("application") %>
     
     <%= audio_tag(
             'http://riley-student-workspace-griggril000.c9users.io/assets/Despacito-Luis_Fonsi_Flute_Cover.mp3',
             id: 'background',
             autoplay: true,
             loop: true,
-            muted: false,
+            muted: true,
             hidden: true
             )
             %>

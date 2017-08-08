@@ -9,10 +9,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path}."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
 
@@ -48,7 +48,7 @@ module ApplicationHelper
       },
     ]
   end
-
+  
   def nav_helper style, tag_type
     nav_links = ''
 
@@ -74,5 +74,5 @@ def alerts
 end
 
 def alert_generator msg
-  js add_gritter(msg, title: "Riley Grigg Portfolio", sticky: false, time: 2500)
+  js add_gritter(msg, title: "Riley Grigg's Portfolio", sticky: false, time: 2500)
 end
