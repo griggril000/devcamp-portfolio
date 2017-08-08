@@ -27,14 +27,34 @@ a:hover {
  * Base structure
  */
 
+@font-face {
+   font-family: myFirstFont;
+   src: url(rileysHandwritingV2.ttf);
+}
+
 html,
 body {
   height: 100%;
+  font-family: 'Satisfy', cursive;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.gritter-title {
+font-family: 'Satisfy', cursive;
+}
+
+p {
+  font-family: myFirstFont;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -242,7 +262,6 @@ body {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 200px;
 }
 
 .skill {
