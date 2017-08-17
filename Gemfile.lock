@@ -292,6 +292,7 @@ DEPENDENCIES
   mini_magick (~> 4.6)
   petergate (~> 1.7)
   pg (~> 0.18)
+  popper_js
   pry-byebug
   puma (~> 3.0)
   rack-cors
