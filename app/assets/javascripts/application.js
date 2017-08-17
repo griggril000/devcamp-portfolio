@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require html.sortable
-//= tether
+//= require tether
 //= require cocoon
 //= require gritter
 //= require cable
