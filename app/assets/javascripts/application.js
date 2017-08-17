@@ -11,14 +11,14 @@
 // about supported directives.
 //
 //= require jquery
+//= require tether
 //= require popper
 //= require bootstrap-sprockets
+//= require gritter
 //= require jquery_ujs
+//= require cable
 //= require jquery-ui
 //= require html.sortable
-//= require tether
 //= require cocoon
-//= require gritter
-//= require cable
 //= require turbolinks
 //= require_tree .
