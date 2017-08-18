@@ -10674,7 +10674,7 @@ h6, .h6 {
 
 /* line 54, /home/ubuntu/workspace/DevcampPortfolio/ClonedRepo/DevcampPortfolio/app/assets/stylesheets/portfolios.scss */
 p {
-  font-family: myFirstFont;
+  font-family: 'myFirstFont', 'Indie Flower', cursive;
 }
 
 /* line 58, /home/ubuntu/workspace/DevcampPortfolio/ClonedRepo/DevcampPortfolio/app/assets/stylesheets/portfolios.scss */

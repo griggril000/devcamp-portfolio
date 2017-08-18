@@ -15024,7 +15024,7 @@ h6, .h6,
 
 /* line 41, /home/ubuntu/workspace/DevcampPortfolio/ClonedRepo/DevcampPortfolio/app/assets/stylesheets/blogs.scss */
 p {
-  font-family: myFirstFont;
+  font-family: 'myFirstFont', 'Indie Flower', cursive;
 }
 
 /*
