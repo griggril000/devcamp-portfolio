@@ -7,7 +7,6 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.by_position
   end
   @page_title = "Riley Grigg's Portfolio"
-  end
 
   def sort
     params[:order].each do |key, value|
