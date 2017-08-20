@@ -43,7 +43,7 @@ module ApplicationHelper
         title: 'Portfolio'
       },
       {
-        url: tech_news_path,
+        url: google_news_path,
         title: 'Google News'
       },
     ]
