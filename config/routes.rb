@@ -10,8 +10,7 @@ Rails.application.routes.draw do
 
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
-  get 'google-news', to: 'pages#google_news'
-
+  get 'tech-news', to: 'pages#tech_news'
   resources :blogs do
     member do
       get :toggle_status
