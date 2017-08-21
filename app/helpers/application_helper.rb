@@ -43,7 +43,7 @@ module ApplicationHelper
         title: 'Portfolio'
       },
       {
-        url: google_news_path,
+        url: tech_news_path,
         title: 'Google News'
       },
     ]
@@ -74,5 +74,5 @@ def alerts
 end
 
 def alert_generator msg
-  js add_gritter(msg, title: "Riley Grigg's Portfolio", sticky: false, time: 2500)
+  js add_gritter(msg, title: "Riley Grigg Portfolio", sticky: false, time: 2500)
 end
