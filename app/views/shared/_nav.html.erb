@@ -4,4 +4,7 @@
   <div><%= link_to "Contact", contact_path %></div>
   <div><%= link_to "Blog", blogs_path %></div>
   <div><%= link_to "Portfolio", portfolios_path %></div>
+  <% if logged_in?(:site_admin) %>
+  <div><%= link_to "Blog 2", "http://bit.ly/RileysBB", target: "_blank", rel: "alternate" %></div>
+  <% end %>
 </div>
