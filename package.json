@@ -3,7 +3,3 @@
   "private": true,
   "dependencies": {}
 }
-
-{
-  "stack": "heroku-16"
-}
