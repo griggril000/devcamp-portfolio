@@ -3,6 +3,5 @@
   <div><%= link_to "About Me", about_me_path %></div>
   <div><%= link_to "Contact", contact_path %></div>
   <div><%= link_to "Blog", blogs_path %></div>
-  <div><%= link_to "Portfolio", portfolios_path %></div>
-<div><p>Hi.<% if logged_in?(:site_admin) %></p>
+  <div <% if logged_in?(:site_admin) %>><%= link_to "Portfolio", portfolios_path %></div>
 </div>
