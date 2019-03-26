@@ -46,10 +46,6 @@ module ApplicationHelper
         url: tech_news_path,
         title: 'Google News'
       },
-	  {
-        url: https://bit.ly/RileysBB,
-        title: 'Riley's BB'
-      },
     ]
   end
   
