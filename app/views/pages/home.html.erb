@@ -5,6 +5,6 @@
     <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary home-about" %>
   </p>
   <p class="lead"></p></p>
-    <%= link_to "Edit/Delete Your Account", edit_user_registration_path, class: "btn btn-lg btn-secondary home-about" if logged_in?(:site_admin, :family, :friend, :best_friend, :user) %>
+    <%= link_to "Edit/Delete Your Account", edit_user_registration_path, class: "btn btn-lg btn-secondary home-about" if logged_in?(:site_admin, :family, :friend, :best_friend) %>
   </p>
 </div>
