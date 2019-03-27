@@ -4,7 +4,9 @@
   <p class="lead"></p></p>
     <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary home-about" %>
   </p>
+<% if current_user != GuestUser %>
   <p class="lead"></p></p>
-    <%= link_to "Edit Account", edit_user_registration_path, class: "btn btn-lg btn-secondary home-about" if logged_in?(:site_admin) %>
+    <%= link_to "Edit/Delete Your Account", edit_user_registration_path, class: "btn btn-lg btn-secondary home-about" %>
   </p>
+<% end %>
 </div>
